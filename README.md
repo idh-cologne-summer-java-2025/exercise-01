@@ -15,6 +15,7 @@ In der Datei `a/A.java` findet sich Code, der das folgende tun soll: Ein Array s
 
 ### c) Geldautomat
 
+[Sie können diese Aufgabe gerne selbstständig bearbeiten, in der nächsten Aufgabe wird es allerdings eine Musterlösung dazu geben.]
 In der Datei `b/ATM.java` finden Sie den Quellcode für einen Teil einer Geldautomaten-Steuerungslogik. Damit kann die folgende Interaktion durchgeführt werden:
 
 ```
