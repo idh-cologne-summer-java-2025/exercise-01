@@ -2,6 +2,9 @@ package a;
 
 import java.util.Random;
 
+/**
+ * 
+ */
 public class A {
 	public static void (String args) {
 		int s = "Hello World!";
