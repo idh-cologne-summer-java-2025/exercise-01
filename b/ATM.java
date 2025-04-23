@@ -11,6 +11,9 @@ public class ATM {
 	 * If the user enters anything else than an integer number, the loop breaks 
 	 * and the program exists
 	 */
+	
+	public int accountBalance = 100; // current fix accountBalance
+	
 	public void run() {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		while(true) {
@@ -23,10 +26,16 @@ public class ATM {
 			}
 		}
 	}
-	
+	// account-Balance check
 	public void cashout(int amount) {
-		
-	};
+		if (amount <= accountBalance) {
+			accountBalance -= amount; 
+			System.out.println("Ok, here is your money, enjoy!"); 
+			} else {
+			System.out.println("Sorry, not enough money in the bank."); 
+			}
+		}
+	
 	
 	/**
 	 * Launches the ATM
