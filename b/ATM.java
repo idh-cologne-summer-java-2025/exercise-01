@@ -4,6 +4,8 @@ import java.io.*;
 
 public class ATM {
 	
+	private float availableMoney = 100000.0f;
+
 	/**
 	 * Main command loop of the ATM
 	 * Asks the user to enter a number, and passes this number to the function cashout(...) 
@@ -16,18 +18,29 @@ public class ATM {
 		while(true) {
 			try {
 				System.out.print("Enter the amount to withdraw: ");
-				int amount = Integer.parseInt(br.readLine());
+				float amount = Float.parseFloat(br.readLine());
+				if(amount < 0) {
+					System.out.println("Negative amount not allowed.");
+					continue;
+				} else if(amount > availableMoney) {
+					System.out.println("Amount exceeds available Money.");
+					continue;
+				}
 				cashout(amount);
+
 			} catch (Exception e) {
 				break;
 			}
 		}
 	}
 	
-	public void cashout(int amount) {
-		
+	public void cashout(float amount) {
+				availableMoney -= amount;
+				System.out.println("You have withdrawn: " + amount + " euros.");
+				System.out.println("Available money: " + availableMoney + " euros.");
 	};
 	
+
 	/**
 	 * Launches the ATM
 	 */
