@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class ATM {
-	int accountBalance = 100;
+	int accountBalance = 1000;
 
 	/**
 	 * Main command loop of the ATM Asks the user to enter a number, and passes this
