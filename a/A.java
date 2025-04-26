@@ -5,7 +5,7 @@ import java.util.Random;
 public class A {
 	public static void main (String [] args) {
 		String s = "Hello World!";
-		char c = 'X';
+		char C = 'X';
 		int[] numberList = new int[15];
 		Random random = new Random();
 		for (int i = 0; i < numberList.length; i++) {
