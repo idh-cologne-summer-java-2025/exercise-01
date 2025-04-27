@@ -3,7 +3,7 @@ package a;
 import java.util.Random;
 
 public class A {
-	public static void (String args) {
+	public static main (String args) {
 		int s = "Hello World!";
 		char c = 'X';
 		int[] numberList = int[15];
